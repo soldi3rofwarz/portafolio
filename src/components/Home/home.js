@@ -13,10 +13,6 @@ const Home = () => {
                 </div>
             </div>
         </section>
-        <p>Dolor dolor duis pariatur incididunt ea reprehenderit Lorem cillum deserunt laborum elit velit veniam pariatur. Eu aliqua in cupidatat sit eu velit cillum nisi. Ad ad eiusmod voluptate non incididunt nulla quis et ad anim velit et. Fugiat mollit aute cupidatat adipisicing quis reprehenderit officia. Dolore veniam deserunt magna pariatur. Velit velit reprehenderit elit sint eiusmod irure consequat eu. Duis sint excepteur tempor ea proident aliqua veniam minim amet pariatur.</p>
-        <p>Dolor dolor duis pariatur incididunt ea reprehenderit Lorem cillum deserunt laborum elit velit veniam pariatur. Eu aliqua in cupidatat sit eu velit cillum nisi. Ad ad eiusmod voluptate non incididunt nulla quis et ad anim velit et. Fugiat mollit aute cupidatat adipisicing quis reprehenderit officia. Dolore veniam deserunt magna pariatur. Velit velit reprehenderit elit sint eiusmod irure consequat eu. Duis sint excepteur tempor ea proident aliqua veniam minim amet pariatur.</p>
-        <p>Dolor dolor duis pariatur incididunt ea reprehenderit Lorem cillum deserunt laborum elit velit veniam pariatur. Eu aliqua in cupidatat sit eu velit cillum nisi. Ad ad eiusmod voluptate non incididunt nulla quis et ad anim velit et. Fugiat mollit aute cupidatat adipisicing quis reprehenderit officia. Dolore veniam deserunt magna pariatur. Velit velit reprehenderit elit sint eiusmod irure consequat eu. Duis sint excepteur tempor ea proident aliqua veniam minim amet pariatur.</p>
-        <p>Dolor dolor duis pariatur incididunt ea reprehenderit Lorem cillum deserunt laborum elit velit veniam pariatur. Eu aliqua in cupidatat sit eu velit cillum nisi. Ad ad eiusmod voluptate non incididunt nulla quis et ad anim velit et. Fugiat mollit aute cupidatat adipisicing quis reprehenderit officia. Dolore veniam deserunt magna pariatur. Velit velit reprehenderit elit sint eiusmod irure consequat eu. Duis sint excepteur tempor ea proident aliqua veniam minim amet pariatur.</p>
         </React.Fragment>
         
 

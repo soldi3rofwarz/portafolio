@@ -7,6 +7,7 @@
 .navbar{
    position: fixed;
    width: 100%;
+   z-index: 999;
    padding: 30px 0;
    /* background-color: crimson; */
    font-family: 'League Spartan', sans-serif;
