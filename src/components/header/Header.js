@@ -6,14 +6,16 @@ import './styleHeader.css'
  const Header = () => {
 
     const [scrollnav, setscrollnav]= useState(false)
-    const [toggle, settoggle]= useState(false)
     
-  
+
 
     const pressToggle=()=>{
-          let menu = document.querySelector(".toggle")
-    menu.onclick = function() {
+        let menu = document.querySelector(".toggle")
+        let click= document.querySelector(".menu")
+        
+        menu.onclick = function() {
         menu.classList.toggle("action")
+        click.classList.toggle("active")
     }
 
     }
@@ -24,7 +26,11 @@ import './styleHeader.css'
             setscrollnav(false)
         }
     }
-    window.addEventListener('scroll',scrolling)
+    useEffect(() => {
+        window.addEventListener('scroll',scrolling)
+        window.addEventListener('click', pressToggle)
+      }, []);
+    
      return (  
          <nav className={scrollnav? 'navbar active ': 'navbar'} >
              <div className='max-width'>
