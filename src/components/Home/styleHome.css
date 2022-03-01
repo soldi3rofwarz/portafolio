@@ -1,0 +1,31 @@
+.home{
+    display: flex;
+    background: url('./../../assets/banner.png') no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;  
+    font-family: 'League Spartan', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+
+}
+
+.home .home-content .text1{
+    font-size: 27px;
+}
+.home .home-content .text2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content .text3 span{
+    color: crimson;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+}
