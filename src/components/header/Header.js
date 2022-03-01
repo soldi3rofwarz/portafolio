@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from 'react';
 import './styleHeader.css'
-import menu from './../../assets/menu.png'
 
 
 
