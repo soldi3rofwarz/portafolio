@@ -28,7 +28,6 @@ import './styleHeader.css'
     }
     useEffect(() => {
         window.addEventListener('scroll',scrolling)
-        window.addEventListener('click', pressToggle)
       }, []);
     
      return (  
@@ -38,7 +37,7 @@ import './styleHeader.css'
                 <ul className='menu'>
                     <li><a href='#'>Home</a></li>
                     <li><a href='#'>About</a></li>
-                    <li><a href='#'>Certifies</a></li>
+                    <li><a href='#'>Certificates</a></li>
                     <li><a href='#'>skills</a></li>
                     <li><a href='#'>projects</a></li>
                     <li><a href='#'>contact</a></li>

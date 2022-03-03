@@ -7,7 +7,7 @@ section{
     font-family: 'Roboto', sans-serif;
 }
 
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -17,7 +17,7 @@ section{
     font-family: 'League Spartan', sans-serif; 
 }
 
-.about .title::before{
+section .title::before{
 content: "";
 position: absolute;
 bottom: 0px;
@@ -27,8 +27,8 @@ height: 3px;
 background: #111;
 transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Quien soy";
+section .title::after{
+   
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -37,11 +37,84 @@ transform: translateX(-50%);
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
-    }
+}
+.about .title::after{
+    content: "Quien soy";
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
 
-.about .about-content .left img{
-    height: 400px;
+.about .about-content .left{
+    width: 45%;
+    
+}
+
+
+.about .about-content .left .img{
     width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 6px;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+
+}
+
+@media (max-width: 1104px){
+    .about .about-content .left .img{
+        width: 350px;
+        height: 350px;
+      
+    }
+}
+
+@media (max-width: 947px){
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
 }
