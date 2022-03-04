@@ -10,7 +10,7 @@
 }
 
 .skills .title::after{
-    content: 'What i know';
+    content: 'Lo que se';
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);

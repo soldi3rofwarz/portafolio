@@ -1,28 +1,28 @@
-.project{
+.certificates{
     font-family: 'Roboto', sans-serif;
     color: #fff;
     background: #111;
 }
-.project .title::before{
+.certificates .title::before{
     background: #fff ;
 }
-.project .title::after{
+.certificates .title::after{
     background: #111;
-    content: 'What i do';
+    content: 'Completados';
 }
 
-.project .carousel .card{
+.certificates .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
 }
-.project .carousel .card .box{
+.certificates .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.project .carousel .card img{
+.certificates .carousel .card img{
     width: 150px;
     height: 150px;
     object-fit: cover;

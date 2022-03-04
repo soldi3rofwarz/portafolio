@@ -3,9 +3,10 @@ import './App.css';
 import Header from './components/header/Header'
 import Home from './components/Home/home'
 import About from './components/About/About';
-import Certificates from './components/cetificated/certificates'
+import ProjectModule from './components/projectModule/project'
 import Skills from './components/skills/skills';
-import Projects from './components/projects/projects';
+import Certificates from './components/Certificates/Certificates';
+
 
 
 function App() {
@@ -14,9 +15,9 @@ function App() {
       <Header/>
       <Home/>
       <About/>
-      <Certificates/>
+      <ProjectModule/>
       <Skills/>
-      <Projects/>
+      <Certificates/>
     </div>
     
 

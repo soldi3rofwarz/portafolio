@@ -1,19 +1,19 @@
 import React from 'react';
-import './styleProject.css'
+import './styleCertificates.css'
 import frontEnd from './../../assets/frontEnd.jpg'
 import git from './../../assets/git.jpg'
 import react from './../../assets/react.jpg'
 
 
-const Projects = () => {
+const Certificates = () => {
     return ( 
-        <section className='project' id='project'>
+        <section className='certificates' id='certificates'>
             <div className='max-width'>
-                <h2 className='title'>My projects</h2>
+                <h2 className='title'>Mis certificados</h2>
                 <div className='carousel'>
                     <div className='card'>
                         <div className='box'>
-                            <img src={frontEnd}/>
+                            <img src={git}/>
                             <div className='text'>nombre</div>
                             <p>Adipisicing officia laboris eu dolore et esse tempor.</p>
                         </div>
@@ -27,7 +27,7 @@ const Projects = () => {
                     </div>
                     <div className='card'>
                         <div className='box'>
-                            <img src={frontEnd}/>
+                            <img src={react}/>
                             <div className='text'>nombre</div>
                             <p>Adipisicing officia laboris eu dolore et esse tempor.</p>
                         </div>
@@ -52,4 +52,4 @@ const Projects = () => {
     );
 }
  
-export default Projects;
+export default Certificates;
