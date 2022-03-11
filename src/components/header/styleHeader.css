@@ -12,10 +12,12 @@
    /* background-color: crimson; */
    font-family: 'League Spartan', sans-serif;
    transition: all 0.3s ease;
+  
 }
 .navbar.active{
    padding: 15px 0 ;
-   background-color: crimson;
+   background-color: rgb(73, 159, 240);
+   box-shadow:  0px 1px 15px 0px black
 }
 .navbar .max-width{
     display: flex;
