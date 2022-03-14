@@ -7,6 +7,7 @@ import ProjectModule from './components/projectModule/project'
 import Skills from './components/skills/skills';
 import Certificates from './components/Certificates/Certificates';
 import Contact from './components/contact/contact';
+import Footer from './components/footer/footer';
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Skills/>
       <Certificates/>
       <Contact/>
+      <Footer/>
     </div>
     
 
