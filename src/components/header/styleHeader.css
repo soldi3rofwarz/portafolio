@@ -63,6 +63,9 @@
 .toggle{
    display: none;
 }
+.bird{
+   display: none;
+}
 
 @media(max-width: 947px){
    .max-width{
@@ -80,6 +83,16 @@
    display: block;
    z-index: 999;
   }
+
+.bird{
+   position: relative;
+   display: block;
+   width: 400px;
+   height: 200px;
+   margin-top: 40px;
+   margin-left: 250px;
+}
+
   .toggle span {
    top: 30px;
    margin: -8px;
@@ -131,6 +144,8 @@
      left: -1000%;
      top: 0;
      background-image: url(./../../assets/bg.jpg);
+     background-repeat: no-repeat;
+     background-size: cover;
      text-align: center;
      padding-top: 80px;
      transition: all 0.3s ease;
@@ -149,4 +164,24 @@
      margin: 20px 0;
      font-size: 25px;
   }
+}
+@media (max-width: 810px){
+   .bird{
+      margin-left: 200px;
+   }
+}
+@media (max-width: 710px){
+   .bird{
+      margin-left: 150px;
+   }
+}
+@media (max-width: 640px){
+   .bird{
+      margin-left: 100px;
+   }
+}
+@media (max-width: 600px){
+   .bird{
+      margin-left: 0px;
+   }
 }

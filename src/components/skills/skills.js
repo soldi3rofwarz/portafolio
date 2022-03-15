@@ -10,7 +10,7 @@ const Skills = () => {
                 <div className='column left'>
                     <div className='text'>My creative skills & experiences</div>
                     <p>Labore dolore sit incididunt reprehenderit sit ex Lorem amet sunt. Elit qui et minim elit laboris minim non labore dolor ea incididunt deserunt. Nostrud anim veniam labore tempor aute. Sunt laboris esse occaecat sunt Lorem pariatur.</p>
-                    <a href='#'>Read more</a>
+                   
                 </div>
                 <div className='column right'>
                     <div className='bars'>

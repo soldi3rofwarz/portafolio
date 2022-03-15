@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import './styleHeader.css'
 import {Link} from 'react-scroll'
+import Rive from 'rive-react';
+import bird from './../../assets/bird.riv'
 
 
 
@@ -41,6 +43,7 @@ import {Link} from 'react-scroll'
                         <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='skills' smooth={true} duration={1000}>skills</Link></li>
                         <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='certificates' smooth={true} duration={1000}>Certificates</Link></li>
                         <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='contact' smooth={true} duration={1000}>contact</Link></li>
+                        <Rive src={bird} className='bird'/>
                     </ul>
                     
                   
