@@ -16,7 +16,7 @@
 }
 .navbar.active{
    padding: 15px 0 ;
-   background-color: crimson;
+   background-color: #1ac6f4;
    box-shadow:  0px 1px 15px 0px black
 }
 .navbar .max-width{
@@ -30,7 +30,7 @@
    font-weight: 600;
 }
 .navbar .logo a span{
-   color: crimson;
+   color: #1ac6f4;
    font-family: 'Roboto', sans-serif;
    transition: all 0.3s ease;
 }
@@ -53,7 +53,7 @@
    transition: color 0.3s ease;
 }
 .navbar .menu li .a:hover{
- color: crimson;
+ color: #1ac6f4;
  font-family: 'Roboto', sans-serif;
 }
 .navbar.active .menu li a:hover{
@@ -130,7 +130,7 @@
      width: 100%;
      left: -1000%;
      top: 0;
-     background-color:#111 ;
+     background-image: url(./../../assets/bg.jpg);
      text-align: center;
      padding-top: 80px;
      transition: all 0.3s ease;

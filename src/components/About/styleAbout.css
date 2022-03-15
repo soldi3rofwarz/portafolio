@@ -33,7 +33,7 @@ section .title::after{
     bottom: -12px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #1ac6f4;
     padding: 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -72,24 +72,24 @@ section .title::after{
 }
 
 .about .about-content .right .text span{
-    color: crimson;
+    color: #1ac6f4;
 }
 .about .about-content .right p{
     text-align: justify;
 }
 .about .about-content .right a{
     display: inline-block;
-    background-color: crimson;
+    background-color: #1ac6f4;
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid crimson;
+    border: 2px solid #1ac6f4;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #1ac6f4;
     background: none;
 
 }
