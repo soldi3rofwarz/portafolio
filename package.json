@@ -9,9 +9,11 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "5.0.0",
+    "react-scroll": "^1.8.6",
     "react-slick": "^0.28.1",
     "rive-react": "^0.0.31",
     "slick-carousel": "^1.8.1",
+    "typewriter-effect": "^2.18.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

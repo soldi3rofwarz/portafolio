@@ -1,5 +1,7 @@
 import React from 'react';
 import './styleHome.css'
+import {Link} from 'react-scroll'
+import Typewriter from 'typewriter-effect';
 const Home = () => {
     return ( 
         <React.Fragment>
@@ -8,8 +10,14 @@ const Home = () => {
                 <div className='home-content'>
                     <div className='text1'> Hola, mi nombre es</div>
                     <div className='text2'> Jose Castro</div>
-                    <div className='text3'> Y soy Ing. en <span>Sistemas</span></div>
-                    <a href='#'>Hire me</a>
+                    <div className='text3'> Y soy Ing. en 
+                    <span><Typewriter onInit={(typewriter)=>{
+                       typewriter
+                       .typeString('Sistemas').pauseFor(1000).deleteAll().start()
+                    }}options={{string:['Sistemas'], autoStart:true,loop: true}} /></span>
+                    
+                    </div>
+                    <Link className='a' to='contact'smooth={true} duration={1000}>Hire me</Link>
                 </div>
             </div>
         </section>

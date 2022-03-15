@@ -16,7 +16,7 @@
 }
 .navbar.active{
    padding: 15px 0 ;
-   background-color: rgb(73, 159, 240);
+   background-color: crimson;
    box-shadow:  0px 1px 15px 0px black
 }
 .navbar .max-width{
@@ -42,16 +42,17 @@
 .navbar .menu li{
    list-style: none;
    display: inline-block;
+   cursor: pointer;
 }
 
-.navbar .menu li a{
+.navbar .menu li .a{
    color: #fff;
    font-size: 18px;
    font-weight: 500;
    margin-left: 25px;
    transition: color 0.3s ease;
 }
-.navbar .menu li a:hover{
+.navbar .menu li .a:hover{
  color: crimson;
  font-family: 'Roboto', sans-serif;
 }
@@ -137,10 +138,13 @@
   .navbar .menu.active {
    left: 0;
   }
+  .navbar .a.active{
+   left: 0;
+  }
   .navbar .menu li{
      display: block;
   }
-  .navbar .menu li a{
+  .navbar .menu li .a{
      display: inline-block;
      margin: 20px 0;
      font-size: 25px;
