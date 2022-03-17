@@ -1,11 +1,22 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import './styleContact.css'
 import Rive from 'rive-react';
+import emailjs from '@emailjs/browser';
+
+
 import user from './.././../assets/user.riv'
 import mapa from './.././../assets/mapa.riv'
 import mail from './.././../assets/mail.riv'
 
 const Contact = () => {
+    const form = useRef();
+
+    function SendEmail(e){
+        e.preventDefault()
+        emailjs.sendForm('service_3orrzun','template_2p9cdgi',form.current,'Ym5vUWUB0S0rVr9EV')
+        .then(r=>console.log(r))
+        .catch(err=>console.log(err))
+    }
     return ( 
         <section className='contact' id='contact'>
             <div className='max-width'>
@@ -41,20 +52,20 @@ const Contact = () => {
                     </div>
                     <div className='column right'>
                         <div className='text'>Comunicate con migo</div>
-                        <form action='#'>
+                        <form ref={form} onSubmit={SendEmail}>
                             <div className='fields'>
                                 <div className='field name'>
-                                    <input type='text' placeholder='Nombre'required/>
+                                    <input type='text' name='name' placeholder='Nombre'required/>
                                 </div>
                                 <div className='field email'>
-                                    <input type='email' placeholder='Email'required/>
+                                    <input type='email' name='email' placeholder='Email'required/>
                                 </div>
                             </div>
                             <div className='field '>
-                                    <input type='text' placeholder='Motivo'required/>
+                                    <input type='text' name='subject' placeholder='Motivo'required/>
                                 </div>
                                 <div className='field textarea'>
-                                    <textarea cols='30' rows='10' placeholder='describe el motivo'required></textarea>
+                                    <textarea cols='30' name='message' rows='10' placeholder='describe el motivo'required></textarea>
                                 </div>
                                 <div className='button'>
                                     <button type='submit'>Enviar mansajes</button>
