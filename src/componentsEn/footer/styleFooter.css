@@ -1,0 +1,15 @@
+footer{
+    font-family: 'Roboto', sans-serif;
+    background: #111;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+footer span a{
+    color: #1ac6f4;
+    text-decoration: none;
+}
+
+footer span a:hover{
+    text-decoration: underline;
+}

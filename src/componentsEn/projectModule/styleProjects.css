@@ -1,0 +1,58 @@
+.project{
+    font-family: 'Roboto', sans-serif;
+    background: #111;
+    color: #fff;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    
+}
+.project .title::before{
+    background-color: #fff;
+}
+.project .title::after{
+    background-color: #111;
+    content: 'Mis proyectos';
+}
+
+.project .project-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project .project-content .card{
+    width: 32%; 
+    height: 250px; 
+    background-color: #1ac6f4;
+    margin-bottom: 20px;
+    overflow: hidden;
+    border-radius: 6px;
+}
+.project .project-content .card .box{
+    transition: all 0.3s ease; 
+}
+
+.project .project-content .card:hover .box{
+ transform: scale(1.05);
+}
+.project .project-content .card a{
+    text-align: center;
+    font-size: 25px;
+    color: #fff;
+}
+
+@media (max-width: 947px){
+    .project .project-content .card{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 690px){
+    .project .project-content .card{
+        width: 100%;
+    }
+}
