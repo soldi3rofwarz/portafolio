@@ -8,38 +8,50 @@ const Skills = () => {
             <h2 className='title'>My skills</h2>
             <div className='skills-content'>
                 <div className='column left'>
-                    <div className='text'>My creative skills & experiences</div>
-                    <p>Labore dolore sit incididunt reprehenderit sit ex Lorem amet sunt. Elit qui et minim elit laboris minim non labore dolor ea incididunt deserunt. Nostrud anim veniam labore tempor aute. Sunt laboris esse occaecat sunt Lorem pariatur.</p>
-                   
+                    <div className='text'>Mis habilidades y logros</div>
+                    <p><strong>Las habilidades que e adquirido con el tiempo: </strong></p>
+                    <p>Facilidad para trabajar en equipo</p>
+                    <p>Buena capacidad para adaptarse a los cambios</p>
+                    <p>capacidad de aprendizaje ascelerado</p>
+                    <p><strong>Mis logros: </strong></p>
+                    <p>Campeon del hackaton Nicaragia 2021</p>
+                    <p>Multiples certificados en Platzi y Udemuy</p>
                 </div>
                 <div className='column right'>
                     <div className='bars'>
                         <div className='info'>
                             <span>HTML</span>
-                            <span>80%</span>
+                           
                         </div>
                         <div className='line html'></div>
                     </div>
                     <div className='bars'>
                         <div className='info'>
                             <span>CSS</span>
-                            <span>90%</span>
+                            
                         </div>
                         <div className='line css'></div>
                     </div>
                     <div className='bars'>
                         <div className='info'>
                             <span>javaScript</span>
-                            <span>70%</span>
+                            
                         </div>
                         <div className='line js'></div>
                     </div>
                     <div className='bars'>
                         <div className='info'>
                             <span>Photoshop</span>
-                            <span>90%</span>
+                            
                         </div>
                         <div className='line ps'></div>
+                    </div>
+                    <div className='bars'>
+                        <div className='info'>
+                            <span>Git</span>
+                            
+                        </div>
+                        <div className='line git'></div>
                     </div>
                 </div>
             </div>

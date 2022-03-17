@@ -4,6 +4,7 @@ import Rive from 'rive-react';
 import emailjs from '@emailjs/browser';
 
 
+import movrow from './.././../assets/movrow.riv'
 import user from './.././../assets/user.riv'
 import mapa from './.././../assets/mapa.riv'
 import mail from './.././../assets/mail.riv'
@@ -20,11 +21,13 @@ const Contact = () => {
     return ( 
         <section className='contact' id='contact'>
             <div className='max-width'>
-                <h2 className='title'>Contact me</h2>
+                <h2 className='title'>Contactame</h2>
                 <div className='contact-content'>
                     <div className='column left'>
                         <div className='text'>Conoceme</div>
-                        <p>Ipsum deserunt labore id ipsum anim incididunt enim veniam ad irure est. Anim sint magna ad laborum reprehenderit laboris officia minim sunt nisi. Occaecat occaecat laborum id et excepteur reprehenderit consequat ipsum id. Est in proident amet sunt nisi voluptate. Consectetur officia veniam aliqua sit magna ea aliquip officia nisi ut aute nisi.</p>
+                       
+                            
+                     
                         <div className='icons'>
                             <div className='row'>
                                 <Rive src={user} animations="idlePreview" className='i'/>
@@ -49,6 +52,7 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
+                        <Rive src={movrow} className='movrow'/>
                     </div>
                     <div className='column right'>
                         <div className='text'>Comunicate con migo</div>

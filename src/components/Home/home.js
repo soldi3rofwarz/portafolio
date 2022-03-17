@@ -17,7 +17,7 @@ const Home = () => {
                     }}options={{string:['Sistemas'], autoStart:true,loop: true}} /></span>
                     
                     </div>
-                    <Link className='a' to='contact'smooth={true} duration={1000}>Hire me</Link>
+                    <Link className='a' to='contact'smooth={true} duration={1000}>Contratame</Link>
                 </div>
             </div>
         </section>

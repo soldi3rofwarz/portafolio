@@ -115,4 +115,10 @@ background: none;
         width: 100%;
         margin-bottom: 35px;
     }
+    .movrow{
+        width: 300px;
+        height: 300px;
+        transform: rotate(90deg);
+        margin-bottom: 50px;
+    }
 }

@@ -64,7 +64,10 @@
     width: 70%;
 }
 .skills-content .right .ps::before{
-    width: 90%;
+    width: 84%;
+}
+.skills-content .right .git::before{
+    width: 94%;
 }
 
 @media (max-width:947px){

@@ -15,6 +15,7 @@ section .title{
     margin-bottom: 60px;
     padding-bottom: 20px;
     font-family: 'League Spartan', sans-serif; 
+    color: #1ac6f4;
 }
 
 section .title::before{
@@ -24,13 +25,13 @@ bottom: 0px;
 left: 50%;
 width: 180px;
 height: 3px;
-background: #111;
+background: rgb(0, 114, 134);
 transform: translateX(-50%);
 }
 section .title::after{
    
     position: absolute;
-    bottom: -12px;
+    bottom: -20px;
     left: 50%;
     font-size: 20px;
     color: #1ac6f4;

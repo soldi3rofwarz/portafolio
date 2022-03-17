@@ -37,13 +37,13 @@ import bird from './../../assets/bird.riv'
                     </div>
                
                     <ul className={sidebar? 'menu active': 'menu'} >
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='home' smooth={true} duration={1000}>Home</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='about' smooth={true} duration={1000}>About</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='project' smooth={true} duration={1000}>projects</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='skills' smooth={true} duration={1000}>skills</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='certificates' smooth={true} duration={1000}>Certificates</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='contact' smooth={true} duration={1000}>contact</Link></li>
-                        <Rive src={bird} animations='lookUp'  className='bird'/>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='home' smooth={true} duration={1000}>Inicio</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='about' smooth={true} duration={1000}>Acerca de</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='project' smooth={true} duration={1000}>proyectos</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='skills' smooth={true} duration={1000}>Habilidades</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='certificates' smooth={true} duration={1000}>Certificados</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='contact' smooth={true} duration={1000}>contacto</Link></li>
+                        <div className='birda'><Rive src={bird} animations='lookUp'  className='bird'/></div>
                     </ul>
                     
                   
