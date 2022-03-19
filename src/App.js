@@ -10,10 +10,14 @@ import Certificates from './components/Certificates/Certificates';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 //************************************** 
-import AboutEn from './componentsEn/AboutEn/AboutEn';
+
+
 
 import {Switch} from 'antd'
 import 'antd/dist/antd.css';
+
+
+
 
 
 
@@ -29,19 +33,8 @@ const pressSwitch =()=>setToggle(!toggle)
     <div className='app'>
       <div className='switch'><span>Es</span><Switch className='tg' onClick={pressSwitch}/><span>En</span></div> 
       
-      {toggle? 
-      <>
+  
       <Header/>
-      <Home/>
-      <AboutEn/>
-      <ProjectModule/>
-      <Skills/>
-      <Certificates/>
-      <Contact/>
-      <Footer/>
-      </> :
-      <>
-       <Header/>
       <Home/>
       <About/>
       <ProjectModule/>
@@ -49,10 +42,8 @@ const pressSwitch =()=>setToggle(!toggle)
       <Certificates/>
       <Contact/>
       <Footer/>
-      </>
-      }
-
-
+      
+    
      
     </div>
     

@@ -3,7 +3,8 @@ import './styleHeader.css'
 import {Link} from 'react-scroll'
 import Rive from 'rive-react';
 import bird from './../../assets/bird.riv'
-
+import logo1 from './../../assets/logo1.png'
+import logo2 from './../../assets/logo2.png'
 
 
  const Header = () => {
@@ -15,7 +16,7 @@ import bird from './../../assets/bird.riv'
 
 
    
-    const scrolling=()=>{
+    const scrolling=async()=>{
         if(window.scrollY >= 80){
             setscrollnav(true)
         }else{
@@ -29,7 +30,7 @@ import bird from './../../assets/bird.riv'
      return (  
          <nav className={scrollnav? 'navbar active ': 'navbar'} >
              <div className='max-width'>
-                <div className='logo'><a href='#'>Portafo<span>lio.</span></a></div>
+             <div className='logo'><img src={logo2} className='img'/></div>
                     <div className={sidebar?'toggle action': 'toggle'} onClick={showsidebar}>
                         <span></span>
                         <span></span>

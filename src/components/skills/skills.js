@@ -5,7 +5,7 @@ const Skills = () => {
     return ( 
     <section className='skills' id='skills'>
         <div className='max-width'>
-            <h2 className='title'>My skills</h2>
+            <h2 className='title'>Mis habilidades</h2>
             <div className='skills-content'>
                 <div className='column left'>
                     <div className='text'>Mis habilidades y logros</div>
@@ -15,7 +15,7 @@ const Skills = () => {
                     <p>capacidad de aprendizaje ascelerado</p>
                     <p><strong>Mis logros: </strong></p>
                     <p>Campeon del hackaton Nicaragia 2021</p>
-                    <p>Multiples certificados en Platzi y Udemuy</p>
+                    <p>Multiples certificados en Platzi y Udemy</p>
                 </div>
                 <div className='column right'>
                     <div className='bars'>

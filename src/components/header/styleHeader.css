@@ -24,20 +24,13 @@
     align-items: center;
     justify-content: space-between;
 }
-.navbar .logo a{
-   color: #fff;
-   font-size: 35px;
-   font-weight: 600;
-}
-.navbar .logo a span{
-   color: #1ac6f4;
-   font-family: 'Roboto', sans-serif;
-   transition: all 0.3s ease;
+.navbar .logo .img{
+   width: 120px;
+   height: 55px;
 }
 
-.navbar.active .logo a span{
-   color: #fff;
-}
+
+
 
 .navbar .menu li{
    list-style: none;
