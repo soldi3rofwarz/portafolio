@@ -6,7 +6,7 @@
 }
 
 .switch{
-  background:#1ac5f4;
+  background: #1ac5f4;
   position: fixed;
   right: 30px;
   bottom: 45px;
@@ -16,12 +16,33 @@
   font-size: 20px;
   border-radius: 12px;
   color: #fff;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+  width: 130px;
 }
-
-.switch span:first-child{
+ .tg{
+  display: flex;
+  height: 35px;
+  width: 50px;
+  object-fit: fill;
+  align-items: center;
+  justify-content: center;
+}
+.switch .us{
+  width: 35px;
+  height: 20px;
+  margin-right: 5px;
+}
+.switch .ni{
+  width: 35px;
+  height: 20px;
+  margin: 2px;
+}
+.switch img:first-child{
 
   margin-right: 3px;
-}
-.switch span:last-child{
-  margin-left: 3px;
+}img:last-child{
+  margin-right: 10px;
 }

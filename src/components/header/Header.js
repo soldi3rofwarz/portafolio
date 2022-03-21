@@ -1,20 +1,29 @@
 import React, {useEffect, useState} from 'react';
 import './styleHeader.css'
 import {Link} from 'react-scroll'
-import Rive from 'rive-react';
+import {useRive,useStateMachineInput} from 'rive-react';
 import bird from './../../assets/bird.riv'
-import logo1 from './../../assets/logo1.png'
 import logo2 from './../../assets/logo2.png'
 
 
  const Header = () => {
 
+    const {rive, RiveComponent}= useRive({
+        src: bird,
+        animations: 'slowDance',
+        autoplay: true,
+      })
+if(rive){
+    console.log(rive.contents)
+}
+
+    
+
+
     const [scrollnav, setscrollnav]= useState(false)
     const [sidebar, setsidebar]= useState(false)
 
     const showsidebar = ()=>setsidebar(!sidebar)
-
-
    
     const scrolling=async()=>{
         if(window.scrollY >= 80){
@@ -44,7 +53,7 @@ import logo2 from './../../assets/logo2.png'
                         <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='skills' smooth={true} duration={1000}>Habilidades</Link></li>
                         <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='certificates' smooth={true} duration={1000}>Certificados</Link></li>
                         <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='contact' smooth={true} duration={1000}>contacto</Link></li>
-                        <div className='birda'><Rive src={bird} animations='lookUp'  className='bird'/></div>
+                        <div className='birda'><RiveComponent className='bird'/></div>
                     </ul>
                     
                   

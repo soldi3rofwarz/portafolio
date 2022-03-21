@@ -10,11 +10,11 @@ import Certificates from './components/Certificates/Certificates';
 import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 //************************************** 
+import us from './assets/us.svg'
+import ni from './assets/ni.svg'
+import {useRive, useStateMachineInput} from 'rive-react'
+import Switch from './assets/switch.riv'
 
-
-
-import {Switch} from 'antd'
-import 'antd/dist/antd.css';
 
 
 
@@ -25,13 +25,25 @@ import 'antd/dist/antd.css';
 
 
 function App() {
-const [toggle, setToggle]= useState(false)
 
-const pressSwitch =()=>setToggle(!toggle)
+  const {rive, RiveComponent}= useRive({
+    src: Switch,
+    stateMachines: "Switch",
+    autoplay: true,
+  })
+
+const onClickInput = useStateMachineInput(
+  rive,'Switch','Switch'
+
+)
 
   return (
     <div className='app'>
-      <div className='switch'><span>Es</span><Switch className='tg' onClick={pressSwitch}/><span>En</span></div> 
+      <div className='switch'>
+      <img src={ni} className='ni'/>
+        <RiveComponent className='tg' onClick={()=>onClickInput.fire()}/>
+        <img src={us} className='us'/>
+      </div> 
       
   
       <Header/>
