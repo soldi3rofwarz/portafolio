@@ -14,17 +14,14 @@ import us from './assets/us.svg'
 import ni from './assets/ni.svg'
 import {useRive, useStateMachineInput} from 'rive-react'
 import Switch from './assets/switch.riv'
-
-
-
-
-
-
-
+import {useTranslation} from 'react-i18next'
 
 
 
 function App() {
+
+  const [toggle, settogle]= useState(false)
+ const [i18n]= useTranslation("home")
 
   const {rive, RiveComponent}= useRive({
     src: Switch,
@@ -33,9 +30,10 @@ function App() {
   })
 
 const onClickInput = useStateMachineInput(
-  rive,'Switch','Switch'
-
+  rive,'Switch','Switch',
+  
 )
+
 
   return (
     <div className='app'>

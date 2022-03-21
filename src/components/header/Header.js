@@ -11,13 +11,12 @@ import logo2 from './../../assets/logo2.png'
     const {rive, RiveComponent}= useRive({
         src: bird,
         animations: 'slowDance',
+        stateMachines: 'look up',
         autoplay: true,
       })
-if(rive){
-    console.log(rive.contents)
-}
 
-    
+
+
 
 
     const [scrollnav, setscrollnav]= useState(false)
