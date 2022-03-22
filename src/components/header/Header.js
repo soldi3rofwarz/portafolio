@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import './styleHeader.css'
 import {Link} from 'react-scroll'
-import {useRive,useStateMachineInput} from 'rive-react';
+import {useRive} from 'rive-react';
 import bird from './../../assets/bird.riv'
 import logo2 from './../../assets/logo2.png'
+import {useTranslation} from 'react-i18next'
 
 
  const Header = () => {
+    const {t}= useTranslation("header")
 
     const {rive, RiveComponent}= useRive({
         src: bird,
@@ -46,12 +48,12 @@ import logo2 from './../../assets/logo2.png'
                     </div>
                
                     <ul className={sidebar? 'menu active': 'menu'} >
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='home' smooth={true} duration={1000}>Inicio</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='about' smooth={true} duration={1000}>Acerca de</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='project' smooth={true} duration={1000}>proyectos</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='skills' smooth={true} duration={1000}>Habilidades</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='certificates' smooth={true} duration={1000}>Certificados</Link></li>
-                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='contact' smooth={true} duration={1000}>contacto</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='home' smooth={true} duration={1000}>{t("header.inicio")}</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='about' smooth={true} duration={1000}>{t("header.about")}</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='project' smooth={true} duration={1000}>{t("header.proyectos")}</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='skills' smooth={true} duration={1000}>{t("header.habilidades")}</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='certificates' smooth={true} duration={1000}>{t("header.certificados")}</Link></li>
+                        <li><Link className={sidebar?'a active': 'a'} onClick={showsidebar} to='contact' smooth={true} duration={1000}>{t("header.contacto")}</Link></li>
                         <div className='birda'><RiveComponent className='bird'/></div>
                     </ul>
                     

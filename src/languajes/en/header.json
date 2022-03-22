@@ -1,0 +1,10 @@
+{
+    "header":{
+        "inicio":"Home",
+        "about": "About",
+        "proyectos":"Projects",
+        "habilidades":"Skills",
+        "certificados": "Certificates",
+        "contacto": "Contact"
+    }
+}

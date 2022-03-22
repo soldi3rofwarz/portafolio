@@ -1,9 +1,13 @@
 .home{
     display: flex;
     background: url('./../../assets/banner.png') no-repeat center;
+    object-fit: fill;
+    background-attachment: fixed;
+    background-size: cover;
     height: 100vh;
     color: #fff;
     min-height: 500px;  
+    
     font-family: 'League Spartan', sans-serif;
 }
 

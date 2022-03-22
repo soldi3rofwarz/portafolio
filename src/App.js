@@ -20,8 +20,7 @@ import {useTranslation} from 'react-i18next'
 
 function App() {
 
-  const [toggle, settogle]= useState(false)
- const [i18n]= useTranslation("home")
+ const {i18n}= useTranslation("home","header","about")
 
   const {rive, RiveComponent}= useRive({
     src: Switch,
@@ -38,9 +37,9 @@ const onClickInput = useStateMachineInput(
   return (
     <div className='app'>
       <div className='switch'>
-      <img src={ni} className='ni'/>
+      <img src={ni} className='ni' onClick={()=> i18n.changeLanguage('es')}/>
         <RiveComponent className='tg' onClick={()=>onClickInput.fire()}/>
-        <img src={us} className='us'/>
+        <img src={us} className='us' onClick={()=> i18n.changeLanguage('en')}/>
       </div> 
       
   

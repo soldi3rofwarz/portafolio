@@ -76,7 +76,7 @@ section .title::after{
     color: #1ac6f4;
 }
 .about .about-content .right p{
-    text-align: justify;
+    text-align: left;
 }
 .about .about-content .right a{
     display: inline-block;
