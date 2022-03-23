@@ -26,7 +26,7 @@
 .project .project-content .card{
     width: 32%; 
     height: 250px; 
-    background-color: #1ac6f4;
+    background: linear-gradient(to right,#1ac6f4, #72e0ff);
     margin-bottom: 20px;
     overflow: hidden;
     border-radius: 6px;

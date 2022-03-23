@@ -2,6 +2,7 @@ import React from 'react';
 import './styleCertificates.css'
 import Slider from "react-slick";
 import Nextrows from './rows/rows';
+import {useTranslation} from 'react-i18next'
 
 
 import frontEnd from './../../assets/certificates/frontEnd.jpg'
@@ -17,6 +18,7 @@ import scope from './../../assets/certificates/scope.jpg'
 
 
 const Certificates = () => {
+  const {t}= useTranslation("certificates")
 
     const images=[frontEnd,git,react,algoritmos,htmlCss,introduccionReact,pastexperiences,Pronunciacion,question,scope]
 
@@ -81,7 +83,7 @@ const Certificates = () => {
     return ( 
         <section className='certificates' id='certificates'>
             <div className='max-width'>
-                <h2 className='title'>Mis certificados</h2>
+                <h2 className='title'>{t("certificates.title")}</h2>
                 <div className='slider'>
                 <Slider {...settings}>
                          

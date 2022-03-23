@@ -1,21 +1,24 @@
 import React from 'react';
 import './styleSkills.css'
+import {useTranslation} from 'react-i18next'
+
 
 const Skills = () => {
+    const {t}= useTranslation("skills")
     return ( 
     <section className='skills' id='skills'>
         <div className='max-width'>
-            <h2 className='title'>Mis habilidades</h2>
+            <h2 className='title'>{t("skills.title")}</h2>
             <div className='skills-content'>
                 <div className='column left'>
-                    <div className='text'>Mis habilidades y logros</div>
-                    <p><strong>Las habilidades que e adquirido con el tiempo: </strong></p>
-                    <p>Facilidad para trabajar en equipo</p>
-                    <p>Buena capacidad para adaptarse a los cambios</p>
-                    <p>capacidad de aprendizaje ascelerado</p>
-                    <p><strong>Mis logros: </strong></p>
-                    <p>Campeon del hackaton Nicaragia 2021</p>
-                    <p>Multiples certificados en Platzi y Udemy</p>
+                    <div className='text'>{t("skills.text")}</div>
+                    <p><strong>{t("skills.p1")}</strong></p>
+                    <p>{t("skills.p2")}</p>
+                    <p>{t("skills.p3")}</p>
+                    <p>{t("skills.p4")}</p>
+                    <p><strong>{t("skills.p5")}</strong></p>
+                    <p>{t("skills.p6")}</p>
+                    <p>{t("skills.p7")}</p>
                 </div>
                 <div className='column right'>
                     <div className='bars'>

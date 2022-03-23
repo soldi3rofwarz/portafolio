@@ -5,28 +5,49 @@ import reportWebVitals from './reportWebVitals';
 import i18n from 'i18next'
 import {I18nextProvider} from 'react-i18next'
 
+
 import homeEs from './languajes/es/home.json'
 import homeEn from './languajes/en/home.json'
 import headerEs from './languajes/es/header.json'
 import headerEn from './languajes/en/header.json'
 import aboutEs from './languajes/es/about.json'
 import aboutEn from './languajes/en/about.json'
+import projectEs from './languajes/es/project.json'
+import projectEn from './languajes/en/project.json'
+import skillsEs from './languajes/es/skills.json'
+import skillsEn from './languajes/en/skills.json'
+import certificatesEs from './languajes/es/certificates.json'
+import certificatesEn from './languajes/en/certificates.json'
+import contactEs from './languajes/es/contact.json'
+import contactEn from './languajes/en/contact.json'
 
-i18n.init({
+
+i18n
+.init({
   interpolation: {escapeValue: false},
-  lng:'es',
+  lng: 'es',
   resources:{
     es:{
       home: homeEs,
       header: headerEs,
-      about: aboutEs
+      about: aboutEs,
+      project: projectEs,
+      skills: skillsEs,
+      certificates: certificatesEs,
+      contact: contactEs
     },
     en:{
       home: homeEn,
       header: headerEn,
-      about: aboutEn
+      about: aboutEn,
+      project: projectEn,
+      skills: skillsEn,
+      certificates: certificatesEn,
+      contact: contactEn
     }
-  }
+  },
+  
+  fallbackLng: "es",
 })
 
 ReactDOM.render(

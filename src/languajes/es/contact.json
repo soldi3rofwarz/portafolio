@@ -1,0 +1,15 @@
+{
+    "contact":{
+        "title":"Contactame",
+        "text": "Conoceme",
+        "name":"Nombre",
+        "location":"Ubicacion",
+        "mail":"Email",
+        "text2":"Comunicate con migo",
+        "inputn":"Nombre",
+        "inputs":"Motivo",
+        "inputm":"describe el motivo",
+        "submit":"Enviar mansajes",
+        "alert": "Mensaje enviado"
+    }
+}

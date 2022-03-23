@@ -80,13 +80,14 @@ section .title::after{
 }
 .about .about-content .right a{
     display: inline-block;
-    background-color: #1ac6f4;
+    background: linear-gradient(to right,#1ac6f4, #72e0ff);
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #1ac6f4;
+    border: 2px;
+    border-image-source:linear-gradient(to right,#1ac6f4, #72e0ff);;
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{

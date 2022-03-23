@@ -1,0 +1,14 @@
+{
+    "contact":{
+        "title":"Contact me",
+        "text": "Get in Touch",
+        "name":"Name",
+        "location":"Location",
+        "text2":"Message me",
+        "inputn":"Name",
+        "inputs":"Subject",
+        "inputm":"Message",
+        "submit":"Send message",
+        "alert": " Message Sent"
+    }
+}
