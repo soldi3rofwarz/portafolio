@@ -3,6 +3,7 @@ footer{
     background: #111;
     padding: 20px 23px;
     color: #fff;
+    text-shadow: 0 0 5px #1ac6f4,0 0 10px #1ac6f4,0 0 20px #1ac6f4,0 0 40px #1ac6f4,0 0 80px #1ac6f4;
     text-align: center;
 }
 footer span a{

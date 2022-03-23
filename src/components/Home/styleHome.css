@@ -23,6 +23,8 @@
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    font-family: 'Megrim', cursive;
+    text-shadow: 0 0 5px #1ac6f4,0 0 10px #1ac6f4,0 0 20px #1ac6f4,0 0 40px #1ac6f4,0 0 80px #1ac6f4;
 }
 .home .home-content .text3{
     font-size: 40px;

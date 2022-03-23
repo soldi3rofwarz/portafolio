@@ -25,7 +25,7 @@ bottom: 0px;
 left: 50%;
 width: 180px;
 height: 3px;
-background: rgb(0, 114, 134);
+background: linear-gradient(to right,rgb(0, 114, 134),rgb(0, 217, 255));
 transform: translateX(-50%);
 }
 section .title::after{
@@ -39,9 +39,7 @@ section .title::after{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .title::after{
-    content: "Quien soy";
-}
+
 .about .about-content{
     display: flex;
     flex-wrap: wrap;

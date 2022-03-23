@@ -9,9 +9,7 @@
     justify-content: space-between;
 }
 
-.skills .title::after{
-    content: 'Lo que se';
-}
+
 .skills .skills-content .column{
     width: calc(50% - 30px);
 }

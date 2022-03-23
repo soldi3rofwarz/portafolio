@@ -46,6 +46,7 @@
    margin-left: 25px;
    transition: color 0.3s ease;
    font-family: 'Roboto', sans-serif;
+   text-shadow: 0 0 2px #1ac6f4,0 0 4px #1ac6f4,0 0 8px #1ac6f4,0 0 16px #1ac6f4,0 0 40px #1ac6f4;
 }
 .navbar .menu li .a:hover{
  color: #1ac6f4;

@@ -9,9 +9,7 @@
     justify-content: space-between;
 } 
 
-.contact .title::after{
-    content: "Y conoceme";
-}
+
 
 .contact .contact-content .column{
     width: calc(50% - 30px);

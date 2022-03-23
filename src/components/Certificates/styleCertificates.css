@@ -10,11 +10,9 @@
 }
 .certificates .title::before{
     background: #fff ;
+    box-shadow: 0 0 10px #1ac6f4,0 0 20px #1ac6f4,0 0 40px #1ac6f4,0 0 40px #1ac6f4,0 0 120px #1ac6f4;
 }
-.certificates .title::after{
-    background: #111;
-    content: 'Completados';
-}
+
 .dots{
     color: aqua;
     font-size: 45px;
