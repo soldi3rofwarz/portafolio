@@ -49,7 +49,7 @@
    text-shadow: 0 0 2px #1ac6f4,0 0 4px #1ac6f4,0 0 8px #1ac6f4,0 0 16px #1ac6f4,0 0 40px #1ac6f4;
 }
 .navbar .menu li .a:hover{
- color: #1ac6f4;
+ color: yellow;
  
 }
 .navbar.active .menu li a:hover{
@@ -166,8 +166,38 @@
   }
 }
 
-@media (max-width: 1920px){
-
+@media (min-width: 1920px){
+   .navbar .menu li .a{
+      color: #fff;
+      font-size: 28px;
+      font-weight: 500;
+      margin-left: 25px;
+      transition: color 0.3s ease;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 0 0 2px #1ac6f4,0 0 4px #1ac6f4,0 0 8px #1ac6f4,0 0 16px #1ac6f4,0 0 40px #1ac6f4;
+   }
+}
+@media (min-width: 1820px){
+   .navbar .menu li .a{
+      color: #fff;
+      font-size: 25px;
+      font-weight: 500;
+      margin-left: 25px;
+      transition: color 0.3s ease;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 0 0 2px #1ac6f4,0 0 4px #1ac6f4,0 0 8px #1ac6f4,0 0 16px #1ac6f4,0 0 40px #1ac6f4;
+   }
+}
+@media (min-width: 1620px){
+   .navbar .menu li .a{
+      color: #fff;
+      font-size: 23px;
+      font-weight: 500;
+      margin-left: 25px;
+      transition: color 0.3s ease;
+      font-family: 'Roboto', sans-serif;
+      text-shadow: 0 0 2px #1ac6f4,0 0 4px #1ac6f4,0 0 8px #1ac6f4,0 0 16px #1ac6f4,0 0 40px #1ac6f4;
+   }
 }
 @media (max-width: 810px){
    .bird{

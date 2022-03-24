@@ -36,22 +36,74 @@
     font-family: 'Roboto', sans-serif;
 }
 .home .home-content .a{
-    display: inline-block;
-    
+    display: block;
     color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
+    font-size: 35px;
+    padding: 25px 0px;
     margin-top: 20px;
-    border-radius: 6px;
-    background: linear-gradient(to right,#1ac6f4, #72e0ff);
-    border: 2px;
-    border-image-source:linear-gradient(to right,#1ac6f4, #72e0ff);;
+    width: 200px;
+    border-radius: 40px;
+    box-shadow: 0 0 2px #1ac6f4,0 0 4px #1ac6f4,0 0 8px #1ac6f4,0 0 16px #1ac6f4,0 0 40px #1ac6f4;
+    overflow: hidden;
     cursor: pointer;
+    text-align: center;
+    position: absolute;
 }
-.home .home-content .a:hover{
-    color: #1ac6f4;
-    background: none;
+
+.tt{
+   
+    position: relative;
+    z-index: 1;
+    
+   
 }
+.liquid{
+ width: 200px;
+ height: 200px;
+ background: #1ac6f4;
+ box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+ position: absolute; 
+ top: -80px;
+ left: 0;
+ transition: .5s;
+}
+
+.liquid::before,
+.liquid::after{
+    content: "";
+    width: 140%;
+    height: 130%;
+    background: rgba(0, 0, 0, 0.521);
+    position: absolute;
+    top: 8%;
+    left: 40%;
+    transform: translate(-50%, 75%);
+}
+.liquid::before{
+    border-radius: 45%;
+    background-color: rgb(20, 20, 20);
+    animation: shake 5s linear infinite;
+}
+
+.liquid::after{
+    border-radius: 40%;
+    background-color: rgba(20, 20, 20, .5);
+    animation: shake 10s linear infinite;
+}
+
+.home .home-content .a:hover .liquid{
+    top: -100px;
+}
+
+@keyframes shake{
+    0%{
+        transform: translate(-40%, -65%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-40%, -65%) rotate(360deg);
+    }
+}
+
 /*-------------------------------------------*/
 @media (max-width: 1300px){
     .home .max-width{

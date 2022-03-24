@@ -5,7 +5,10 @@ import Typewriter from 'typewriter-effect';
 import {useTranslation} from 'react-i18next'
 const Home = () => {
     const {t}= useTranslation("home")
+
+    
     return ( 
+
         <React.Fragment>
         <section className='home' id='home'>
             <div className='max-width'>
@@ -19,7 +22,11 @@ const Home = () => {
                     }}options={{string:[`${t("home.text4")}`], autoStart:true,loop: true}} /></span>
                     
                     </div>
-                    <Link className='a' to='contact'smooth={true} duration={1000}>{t("home.button")}</Link>
+                    <div className='a'>
+                        <Link className='tt' to='contact'smooth={true} duration={1000}>{t("home.button")}</Link>
+                        <div className='liquid'></div>
+                    </div>
+                    
                 </div>
             </div>
         </section>

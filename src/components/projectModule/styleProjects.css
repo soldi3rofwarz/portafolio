@@ -41,16 +41,24 @@
     font-size: 25px;
     color: #fff;
 }
-
+@media (max-width: 2400px){
+    .project .project-content .card{
+        width: 48%;
+        margin-bottom: 20px;
+        height: 100%;
+    }
+}
 @media (max-width: 947px){
     .project .project-content .card{
         width: 48%;
         margin-bottom: 20px;
+        height: 100%;
     }
 }
 
 @media (max-width: 690px){
     .project .project-content .card{
         width: 100%;
+        height: 100%;
     }
 }

@@ -46,20 +46,21 @@
     content: '';
     position: absolute;
     height: 100%;
-    
     left: 0;
     top: 0;
-    background: #1ac6f4;
+    background: linear-gradient(to right,#00556d,#1ac6f4,#4ed9ff);
+    animation: animate 2s linear infinite;
 }
 
 .skills-content .right .html::before{
     width: 80%;
+    
 }
 .skills-content .right .css::before{
     width: 90%;
 }
 .skills-content .right .js::before{
-    width: 70%;
+    width: 75%;
 }
 .skills-content .right .ps::before{
     width: 84%;
@@ -73,4 +74,24 @@
         width: 100%;
         margin-bottom: 35px;
     }
+}
+
+@keyframes animate {
+    0%{
+        background: linear-gradient(to right,#00556d,#1ac6f4,#4ed9ff);
+    }
+    25%{
+        background: linear-gradient(to right,#228fad,#0e8fb3,#34cffa);
+    }
+    50%{ 
+        background: linear-gradient(to right,#4ed9ff,#00556d,#1ac6f4);
+    }
+    75%{
+        background: linear-gradient(to right,#38d2fd,#1999bd,#0d89ac);
+    }
+    
+    100%{
+        background: linear-gradient(to right,#1ac6f4,#4ed9ff,#00556d);
+    }
+   
 }
